@@ -22,8 +22,8 @@
 		body, html {
 			font-family: helvetica;
 			font-size: 14px;
-			width: 100%;
-			height: 100%;
+			width: 50%;
+			height: 50%;
 			position: absolute;
 			padding: 0;
 			margin: 0;
