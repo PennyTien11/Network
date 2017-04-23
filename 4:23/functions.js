@@ -6,6 +6,14 @@
       document.getElementById("InputText").value="MAP2K4\nFLNC\nRPA2\nSTAT3";
     }
 
+        function setAll(){
+      //變數checkItem為checkbox的集合
+      var checkItem = document.getElementsByName("input_node[]");
+      for(var i=0;i<checkItem.length;i++){
+        checkItem[i].checked=true; 
+      }
+    }
+
 var http_request=false;
 function test_ajax(variable){
  http_request=false;
@@ -29,7 +37,7 @@ function test_ajax(variable){
  }
 var by_post='variable='+variable; //將變數放進字串
 http_request.onreadystatechange=show_area;
-http_request.open('POST','ajax_example.php',true);
+http_request.open('POST','select.php',true);
 http_request.setRequestHeader("Content-Type","application/x-www-form-urlencoded;");  //**重要一定要加上
 http_request.send(by_post);
 }

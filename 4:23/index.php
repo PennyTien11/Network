@@ -12,19 +12,21 @@
 </head>
 <body>
 	<div class="container">
-  		<div class="row-fluid">
-    		<div class="span2">
+  		<div class="row">
+    		  <div class="col-md-2"> 
     			<h2>Input Data</h2>
 					<textarea name="InputText" id="InputText" class="form-control" style="height:500px;width:200px"></textarea>
 					<p>
 						<button type="button" class="btn btn-primary" onclick="pass()">Submit</button>
 						<button type="button" class="btn btn-link" onclick="example()">example</button>
 					</p>
-				</form>
     		</div>
-    		<div class="span10" id="show_area"> </div>
+    		<div class="col-md-1"> </div>
+    		<div class="col-md-10" id="show_area"> </div>
+    	</div>
+    </div>
+    		
 	</body>
-</body>
 </html>
 
 
